@@ -1,6 +1,6 @@
 specVersion: 0.0.5
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: MyToken
@@ -17,7 +17,7 @@ dataSources:
         - ERC1155Contract
       abis:
         - name: MyToken
-          file: ./abis/MyToken.json
+          file: MyToken/abis/MyToken.json
       eventHandlers:
         - event: ApprovalForAll(indexed address,indexed address,bool)
           handler: handleApprovalForAll
@@ -27,4 +27,4 @@ dataSources:
           handler: handleTransferSingle
         - event: URI(string,indexed uint256)
           handler: handleURI
-      file: ./src/my-token.ts
+      file: MyToken/MyToken.wasm
