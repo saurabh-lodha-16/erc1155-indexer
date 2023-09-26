@@ -1,0 +1,8 @@
+{
+  "base-testnet": {
+    "MyToken": {
+      "address": "0x1A558a046AAEAda0d9E7F5529d0f979178C6DC67",
+      "startBlock": 10262285
+    }
+  }
+}
